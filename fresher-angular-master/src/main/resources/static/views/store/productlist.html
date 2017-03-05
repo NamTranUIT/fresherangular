@@ -1,0 +1,39 @@
+<div class="container">
+        <h2>Product List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                	<th>Name</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Producer</th>
+                    <th>Available</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in products">
+                    <td><a href="#/product-detail/{{product.id}}" >{{product.name}}</a></td>
+                    <td>{{product.model}}</td>
+                    <td>{{product.year}}</td>
+                    <td>{{product.price | currency}}</td>
+                    <td>{{product.producer}}</td>
+                    <td>
+                        <button class="btn btn-sm btn-success" ng-click="plusItem(product.id)">
+                        	<span class="glyphicon glyphicon-plus" ></span>
+                        </button>
+                        {{product.available | number}}
+						<button class="btn btn-sm btn-warning" ng-click="minusItem(product.id)">
+							<span class="glyphicon glyphicon-minus" ></span>
+						</button>
+					</td>
+                    <td>
+                    	<button class="btn btn-danger" ng-click="removeItem(product.id)" >
+                    		<span class="glyphicon glyphicon-trash"></span>
+                    	</button>
+                    </td>
+                </tr>
+            </tbody>
+       </table>
+</div>

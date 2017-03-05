@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Product Detail</title>
+</head>
+<body>
+		<h2>Product Detail</h2>
+		<div style="padding-left: 150px;">
+		<table>
+			<tr  >
+				<td style="width: 200px; padding-bottom: 20px;"><b>Name:</b> </td>
+				<td>{{productDetail.name}}</td>
+			</tr>
+			<tr>
+				<td style="width: 200px; padding-bottom: 20px;"><b>Model: </b></td>
+				<td>{{productDetail.model}}</td>
+			</tr>
+			<tr>
+				<td style="width: 200px; padding-bottom: 20px;"><b>Year: </b></td>
+				<td>{{productDetail.year}}</td>
+			</tr>
+			<tr>
+				<td style="width: 200px; padding-bottom: 20px;"><b>Price: </b></td>
+				<td>{{productDetail.price}}</td>
+			</tr>
+			<tr>
+				<td style="width: 200px; padding-bottom: 20px;"><b>Producer: </b></td>
+				<td>{{productDetail.producer}}</td>
+			</tr>
+			<tr>
+				<td style="width: 200px; padding-bottom: 20px;"><b>Available: </b></td>
+				<td>{{productDetail.available}}</td>
+			</tr>
+			<tr>
+				<td align="center" rowspan="2">
+					<button class="btn btn-info" ng-click="Back()">Back</button> 
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+</body>
+</html>

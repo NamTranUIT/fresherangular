@@ -1,0 +1,22 @@
+.menu-list{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.home-section{
+    float:left;
+    width: 10%;
+}
+.section{
+    margin-left: 10%;
+    float:left;
+}
+.photo{
+    padding-right: 5px;
+}
+
+.form-group .ng-valid.ng-dirty{
+	background-color: lightgreen;
+}
+.form-group .ng-invalid.ng-dirty{
+	background-color: red;
+}
